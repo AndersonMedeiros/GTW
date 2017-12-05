@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Get to Work</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_orcamento">Orcamento</string>
+    <string name="title_activity_tipos_materiais">TiposMateriais</string>
+    <string name="title_activity_tijolo">Tijolo</string>
+    <string name="title_activity_resultado">Resultado</string>
+    <string name="title_activity_forro">Forro</string>
+    <string name="title_activity_result_forro">ResultForro</string>
+    <string name="title_activity_principal_adm">PrincipalAdm</string>
+    <string name="title_activity_cadastro_material">CadastroMaterial</string>
+    <string name="title_activity_cad_material">CadMaterial</string>
+
+
+    <string-array name="adp_categoria_material">
+        <item>Parede</item>
+        <item>Forro</item>
+    </string-array>
+    <string name="title_activity_tinta">Tinta</string>
+    <string name="title_activity_result_tinta">ResultTinta</string>
+</resources>

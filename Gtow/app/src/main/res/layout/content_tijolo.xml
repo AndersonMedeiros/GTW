@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.andersonmedeiros.gtow.Tijolo"
+    tools:showIn="@layout/activity_tijolo">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_padding"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding"
+        android:paddingTop="@dimen/activity_vertical_padding"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:id="@+id/ll_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_n_mat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Material"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_comp_mat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Comprimento"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_larg_mat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Largura"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_alt_mat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Altura"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_n_amb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Ambiente:"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_comp_amb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Comprimento"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_larg_amb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Largura"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <EditText
+                        android:id="@+id/edt_txt_alt_amb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Altura"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorLink="@android:color/holo_green_light" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@android:color/black"
+            android:text="CALCULAR"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

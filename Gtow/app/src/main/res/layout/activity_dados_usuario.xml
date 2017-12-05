@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_padding"
+    android:paddingLeft="@dimen/activity_horizontal_padding"
+    android:paddingRight="@dimen/activity_horizontal_padding"
+    android:paddingTop="@dimen/activity_vertical_padding"
+    android:weightSum="10"
+    tools:context="com.example.andersonmedeiros.gtow.DadosUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_form_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_form_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_padding"
+            android:paddingLeft="@dimen/activity_horizontal_padding"
+            android:paddingRight="@dimen/activity_horizontal_padding"
+            android:paddingTop="@dimen/activity_vertical_padding">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_txt_cpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ems="10"
+                    android:hint="CPF"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_txt_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ems="10"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_txt_fone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ems="10"
+                    android:hint="Fone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edt_txt_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Senha"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/bt_alterar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Alterar"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
